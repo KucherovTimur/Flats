@@ -1,0 +1,103 @@
+main {
+    padding: 60px 0;
+    background: #eee;
+}
+h2 {
+    margin-top: 20px;
+}
+.gallery {
+    /* background-color: #a8ffaa; */
+    display: grid;
+    grid-template-areas: "Flat0-0 Flat0-0"
+    "Flat0-3 Flat0-2"
+    "Flat0-3 Flat0-1"
+    "Flat0-4 Flat0-4";
+    width: 50%;
+    float: left;
+}
+.gallery img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid transparent;
+}
+#Flat0-0 {
+    grid-area: Flat0-0;
+}
+#Flat0-3 {
+    grid-area: Flat0-3;
+    height: 600px;
+}
+#Flat0-2 {
+    grid-area: Flat0-2;
+}
+#Flat0-1 {
+    grid-area: Flat0-1;
+}
+#Flat0-4 {
+    grid-area: Flat0-4;
+}
+.inf {
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 15px;
+    background: white;
+    width: calc(50% - 10px);
+    display: inline-block;
+    text-align: left;
+}
+.inf p:first-child {
+    font-size: 30px;
+}
+.inf p:nth-child(3) {
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.inf a {
+    display: block;
+    line-height: 35px;
+    width: 150px;
+    margin: 10px 0;
+    text-align: center;
+    border: 2px solid #999;
+    border-radius: 20px;
+    color: #555;
+    transition: 0.6s;
+}
+.inf a:hover {
+    color: #222;
+    border: 2px solid #222;
+    background: #a8ffaa;
+}
+.inf ul {
+    list-style: none;
+}
+.inf li {
+    border-top: 2px solid #222;
+}
+.inf section {
+    display: inline-block;
+    margin-right: 10px;
+}
+.inf img {
+    height: 40px;
+    width: 20px;
+	display: inline-block;
+}
+.inf p {
+    display: inline-block;
+    line-height: 40px;
+    vertical-align: top;
+}
+iframe {
+    width: calc(50% - 10px);
+    float: right;
+    transition: 0.6s;
+    filter: grayscale(100%);
+}
+iframe:hover {
+    filter: none;
+}

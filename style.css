@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+#check {
+	display: none;
+}
+button {
+	outline: none;
+}
+.modal {
+	position: fixed;
+	background: #ffffff88;
+	backdrop-filter: blur(10px);
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	transform: translateY(100%) scale(0);
+	transition: 0.6s;
+}
+.modal form {
+	box-sizing: border-box;
+	width: 90%;
+	max-width: 400px;
+	padding: 20px;
+	background: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 1px 1px 20px rgba(0,0,0,0.2);
+}
+.modal form * {
+	margin-bottom: 10px ;
+}
+.modal h2 {
+	text-align: center;
+}
+.modal input {
+	outline: none;
+	width: 100%;
+	line-height: 35px;
+	border: 1px solid #aaa;
+	border-radius: 17.5px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.modal button {
+	outline: none;
+	line-height: 35px;
+	border-radius: 17.5px;
+	padding: 0 20px;
+	border: 1px solid #aaa;
+	background: #fff;
+	transition: 0.6s;
+	cursor: pointer ;
+}
+.modal button:hover {
+	background: #eee;
+	border: 1px solid #555;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	transition: 0.6s;
+}
+h1 {
+	text-align: center;
+}
+.sectionTitle {
+	margin-bottom: 20px;
+	text-align: center;
+	color: #212121;
+}
+header {
+	top: 0;
+	font-size: 0;
+	background: #212121;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+main {
+	/* background: #212121; */
+	overflow: hidden;
+	text-align: center;
+}
+.container {
+	position: relative;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	/* background:linear-gradient(black, maroon, purple, blue, yellow, black); */
+}
+.logo {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-right: 50px;
+	display: inline-block;
+	filter: invert(100%);
+}.Menu {
+	background: white;
+	text-align: center;
+	margin:auto;
+	display: inline-block;
+	font-size: 0;
+	vertical-align: top;
+}
+.Menu li {
+	display: inline-block;
+	background: white;
+	/* width: 18%; */
+	line-height: 60px;
+	color: #616161;
+}
+.Menu li>a {
+	z-index: 2;
+	background: gold;
+}
+.Menu li a {
+	box-sizing: border-box;
+	transition: 0.6s;
+	display: block;
+	position: relative;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	width: 150px;
+	line-height: 46px;
+	border: 2px solid rgba(255, 255, 255, 0.2) ;
+	background: #212121;
+}
+.Menu li a:hover {
+	color: #212121;
+	background: white;
+	padding-left: 10px;
+}
+nav {
+	background: red;
+	position: absolute;
+	transform: translateY(-100%);
+	transition: 0.3s;
+}
+.Menu li:hover nav {
+	transform: translateY(0);
+	opacity: 1;
+}
+.NavA {
+	width: 200px;
+	transition: 0.6s;
+	box-sizing: border-box;
+}
+.NavA:hover {
+	color: #212121;
+	background: #EEEEEE;
+	padding-left: 10px;
+}
+.contacts {
+	float: right;
+}
+.phoneButton {
+	display: inline-block;
+}
+.contacts p {
+	margin: 0 5px;
+	font-size: 18px;
+	color: white;
+	display: inline-block;
+	line-height: 50px;
+	vertical-align: top;
+}
+.phoneButton img {
+	height: 40px;
+	width: 40px;
+	margin-top: 10px;
+	filter: invert(100%);
+}
+.request {
+	font-size: 18px;
+	vertical-align: top;
+	line-height: 40px;
+	display: inline-block;
+	border-radius: 30px ;
+	border: 2px solid white ;
+	padding: 0 15px;
+	margin-top: 3px;
+	color:  white ;
+}
+.request:hover {
+	background: #EEEEEE;
+	color: #212121;
+	transition: 0.6s;
+}
+/* .carousel {
+	background: pink;
+} */
+.images {
+	white-space: nowrap;
+	transition: 0.6s;
+	font-size: 0;
+}
+.images img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	object-position: 0px 75%;
+}
+.buttons {
+	text-align: center;
+	transform: translateY(-50%);
+	font-size: 0;
+}
+.buttons a {
+	background: white;
+	display: inline-block;
+	border-radius: 25px;
+	padding: 0 10px;
+	margin: 5px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+}
+.buttons a:first-child img {
+	transform: rotate(180deg);
+}
+.buttons img {
+	height: 20px;
+	margin: 15px 25px;
+}
+.Flats{
+	text-align: center;
+}
+.Flat {
+	text-align: center;
+	display: inline-block;
+	background: #EEEEEE;
+	width: 43.5%;
+	margin: 0 1.5% 3%;
+	border: 2px gray;
+	border-collapse: collapse;
+	box-shadow: 1px 1px 20px rgba(0,0,0,1);
+	overflow: hidden;
+}
+.Flat section {
+	display: block;
+	width: 50%;
+	float: left;
+}
+.Flat section p {
+	display: inline-block;
+}
+.Bed {
+	height: 10px;
+	width: 10px;
+}
+.Man {
+	height: 10px;
+	width: 10px;
+}
+.Flat>img {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	height: 300px;
+}
+.Flat h3 {
+	text-align: center;
+}
+.Flat p {
+	margin: 10px;
+	text-align: justify;
+}
+.Flat a {
+    line-height: 20px;
+	margin: 20px;
+    width: 100px;
+    background: #212121;
+    color: #00E5FF;
+    padding: 5px;
+    border-radius: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+}
+.Flat a:hover {
+	background: #BDBDBD;
+	color:#212121;
+}
+#moreButton {
+    line-height: 20px;
+    width: 100px;
+    background: #EEEEEE;
+    color: #212121;
+    padding: 5px;
+    border-radius: 100px;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+	border: 2px solid #212121;
+	margin: auto;
+	margin-bottom: 15px;
+}
+#moreButton:hover {
+	transition: 0.5s;
+	background: #212121;
+	color: white;
+	border: 2px solid white;
+}
+.comments {
+	height: 250px;
+	padding-bottom: 20px;
+}
+.comments .buttons {
+	position: relative;
+	top: 200px;
+	transform: translateY(0);
+	/* position: absolute; */
+	/* bottom: 0; */
+}
+.pair {
+	position: absolute;
+	/* background:linear-gradient(black, maroon, purple, blue, yellow, black); */
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.6s;
+	transform: scale(0.95);
+}
+.activePair {
+	opacity: 1;
+	pointer-events: auto;
+	transform: scale(1);
+}
+.comment{
+	background: #EEEEEE;
+	border-radius: 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	width: calc(50% - 5px);
+	box-sizing: border-box;
+	padding: 30px;
+	float: right;
+	text-align: left;
+}
+.comment:first-child{
+	float: left;
+}
+.comment img{
+	height: 60px;
+	width: 60px;
+	object-fit: cover;
+}
+.comment div{
+	display: inline-block;
+	vertical-align: top;
+}
+.comment h4{
+	line-height: 20px;
+	padding-top: 10px;
+}
+.comment div p{
+	line-height: 20px;
+}
+footer {
+	overflow: hidden;
+	background: #212121;
+	padding: 50px 0;
+	width: 100%;
+}
+footer p {
+	display: inline-block;
+	color: #EEEEEE;
+}
+/* footer .logo {
+	margin: 10px;
+	margin-left: 0;
+} */
+/* .fMenu {
+	margin: 10px;
+	margin-left: 30px;
+	display: inline-block;
+	background: gold;
+	vertical-align: top;
+	font-size: 0;
+} */
+/* .fMenu a {  
+	color: #EEEEEE;
+	background: green;
+	line-height: 20px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+} */
+.footerContacts {
+	text-align: center;
+	background: pink;
+	background: #212121;
+	/* width: 30%; */
+	float: right;
+}
+.location {
+	width: 280px;
+	padding: 5px;
+	margin: 10px 30px;
+	margin-left: 30px;
+	background: red;
+	background: #212121;
+	display: block;
+	vertical-align: top;
+}
+.fRequest {
+	display: inline-block;
+	margin: 10px;
+	vertical-align: top;
+}
+.footerPhone {
+	padding: 5px;
+	margin: 10px;
+	margin-top: 0;
+	background: aqua;
+	background: #212121;
+	display: block;
+	/* width: 100%; */
+}
+.social {
+	padding: 5px;
+	margin: 10px;
+	background: blueviolet;
+	background: #212121;
+	display: block;
+	/* width: 100%; */
+}
+footer img {
+	width: 20px;
+	filter: invert(100%);
+}
+@media(max-width:600px){
+	.Menu {
+		display: none;
+	}
+	.contacts {
+		display: none;
+	}
+	.logo {
+		margin-left: calc(50% - 20px);
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	label {
+		background-color: #212121;
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		left: 0;
+	}
+	.container {
+		position: static;
+	}
+	span {
+		position: absolute;
+		background-color: white;
+		width: 80%;
+		height: 2px;
+		left: 10%;
+		top: 24px;
+		transition: 0.6s;
+	}
+	span::after {
+		content: "";
+		position: absolute;
+		transition: 0.6s;
+		background-color: white;
+		width: 100%;
+		height: 2px;
+		top: 8px;
+	}
+	span::before {
+		content: "";
+		position: absolute;
+		transition: 0.6s;
+		background-color: white;
+		width: 100%;
+		height: 2px;
+		bottom: 8px;
+	}
+	#check:checked ~ label span {
+		transform: rotate(45deg);
+	}
+	#check:checked ~ label span::before {
+		transform: translateY(-100px);
+	}
+	#check:checked ~ label span::after {
+		transform: rotate(-270deg);
+		top: 0;
+	}
+	#check {
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.Flat {
+		width: 100%;
+	}
+	.comments {
+		height: 500px;
+	}
+	.comment {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.buttons {
+		bottom: 0;
+	}
+	footer .logo {
+		display: none;
+	}
+}
