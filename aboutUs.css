@@ -82,3 +82,15 @@ iframe:hover {
 .ourTeam li {
     margin: 5px;
 }
+@media(max-width: 600px){
+    .infUs, iframe {
+        width: 100%;
+    }
+    .ourContacts {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    .ourTeam .container div {
+        width: calc(100% / 2 - 20px);
+    }
+}

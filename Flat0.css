@@ -101,3 +101,9 @@ iframe {
 iframe:hover {
     filter: none;
 }
+
+@media(max-width: 600px){
+    .gallery, .inf, iframe {
+        width: 100%;
+    }
+}

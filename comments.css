@@ -44,3 +44,8 @@ h1 {
 .review p {
     line-height: 20px;
 }
+@media(max-width: 600px){
+    .rightColumn, .leftColumn{
+        width: 100%;
+    }
+}
